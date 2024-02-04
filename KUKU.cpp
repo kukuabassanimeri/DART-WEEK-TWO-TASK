@@ -1,28 +1,27 @@
-#include<iostream>
-#include<math.h> 
+#include <iostream>
+#include <math.h>
 using namespace std;
 
-int add(int x, int y); //function declaration
+int add(int x, int y); // function declaration
 
-
-//function to print numbers in reverse order
-//function declaration
+// function to print numbers in reverse order
+// function declaration
 int reverse(int number);
 
-//function to swap two numbers entered by the user
-//function declaration
-void swap(int x, int y); 
+// function to swap two numbers entered by the user
+// function declaration
+void swap(int x, int y);
 
-//function to find the GCD of two numbers
+// function to find the GCD of two numbers
 int findGCD(int x, int y);
 
-int main() 
-{   
+int main()
+{
 
     /*{
         cout<<"I am Abass KUKu Animeri. "<<endl;
     }*/
-    
+
     /*{
         int a, b, c;
         cout<<"enter a:";
@@ -32,7 +31,7 @@ int main()
         c = a * b;
         cout<<c<<endl;
     }*/
- 
+
     /*{
         //program to check for odd and even nmuber
         int n;
@@ -48,7 +47,7 @@ int main()
         }
     }*/
 
-    //program to calculate compound interest
+    // program to calculate compound interest
     /*{
         float p, r, t, ci;
         cout<<"Enter p: ";
@@ -61,7 +60,7 @@ int main()
         cout<<ci<<endl;
     }*/
 
-    //functions in c++
+    // functions in c++
     /*{
         int a, b;
         cout<<"Enter a: ";
@@ -72,80 +71,96 @@ int main()
         int c = add(a, b); //function calling
         cout<<c;
     }*/
-    
-//Program to print numbers in reverse order
-/*{
-    int number, result;
-    cout<<"Enter the digits to reverse: ";
-    cin>>number;
-    result = reverse(number);  //fuction calling
-    cout<< result;
 
-}*/
+    // Program to print numbers in reverse order
+    /*{
+        int number, result;
+        cout<<"Enter the digits to reverse: ";
+        cin>>number;
+        result = reverse(number);  //fuction calling
+        cout<< result;
 
-//program to print numbers in reverse order
-/*{
-    int numbers, rem, revnumber = 0, store;
-    cout<<"Enter the digits to reverse: ";
-    cin>>numbers;
-    //store = numbers;
+    }*/
 
-    while(numbers > 0)
+    // program to print numbers in reverse order
+    /*{
+        int numbers, rem, revnumber = 0, store;
+        cout<<"Enter the digits to reverse: ";
+        cin>>numbers;
+        //store = numbers;
+
+        while(numbers > 0)
+        {
+            rem  = numbers % 10;   //getting last digit of number
+            revnumber = (revnumber * 10) + rem ;  //adding last digit to revnumber
+            numbers  = numbers / 10;   //removing last digit from number
+        }
+        cout<<store<<endl;
+        cout<<revnumber;
+    }*/
+
+    // program to swap two numbers
+    /*{
+        int a, b;
+        cout<<"Enter the value of a: ";
+        cin >> a;
+        cout<<"Enter the value of b: ";
+        cin>>b;
+        //function call
+        swap(a, b);
+        cout<<a<<endl;
+        cout<<b<<endl;
+    }*/
+
+    /*{
+        int FirstNumber, SecondNumber, GCD;
+        cout << "Please enter the first number: ";
+        cin >> FirstNumber;
+        cout << "Please enter the second number: ";
+        cin>>SecondNumber;
+
+        GCD = findGCD(FirstNumber, SecondNumber);
+        cout<<GCD;
+
+    }*/
+
+    // program to calculate power of numbers
+    /*{
+        double x, y, z;
+        cout<<"Enter the value of x: ";
+        cin>>x;
+        cout<<"Enter the value of y: ";
+        cin>>y;
+        z =pow(x, y);
+        cout<<z;
+
+    }*/
+
+    // program to calculate perfect numbers
+    // a perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself.
     {
-        rem  = numbers % 10;   //getting last digit of number
-        revnumber = (revnumber * 10) + rem ;  //adding last digit to revnumber
-        numbers  = numbers / 10;   //removing last digit from number
+        int number, i, sum = 0;
+        cout << "Enter the number: ";
+        cin >> number;
+        for (i = 1; i <= number / 2; ++i)
+        {
+            
+            if (number % i == 0)
+                sum += i;
+        }
+        if (sum == number)
+            cout<<"The number entered is a Perfect";
+        else
+            cout<<"The number entered is not a Perfect";
     }
-    cout<<store<<endl;
-    cout<<revnumber;
-}*/
-
-//program to swap two numbers
-/*{
-    int a, b;
-    cout<<"Enter the value of a: ";
-    cin >> a;
-    cout<<"Enter the value of b: ";
-    cin>>b;
-    //function call
-    swap(a, b);
-    cout<<a<<endl;
-    cout<<b<<endl;
-}*/
-
-/*{
-    int FirstNumber, SecondNumber, GCD;
-    cout << "Please enter the first number: ";
-    cin >> FirstNumber;
-    cout << "Please enter the second number: ";
-    cin>>SecondNumber;
-
-    GCD = findGCD(FirstNumber, SecondNumber);
-    cout<<GCD;
-    
-}*/
-
-//program to calculate power of numbers
-{
-    double x, y, z;
-    cout<<"Enter the value of x: ";
-    cin>>x;
-    cout<<"Enter the value of y: ";
-    cin>>y;
-    z =pow(x, y);
-    cout<<z;
-
-}
-
-
 
     return 0;
 }
 
-//function definition
+// function definition
 int findGCD(int x, int y)
 {
-    if(x == 0)
+    if (x == 0)
     {
         return y;
     }
@@ -155,7 +170,7 @@ int findGCD(int x, int y)
     }
     else if (x > y)
     {
-        return  findGCD(x - y, y);
+        return findGCD(x - y, y);
     }
     else
     {
@@ -163,32 +178,32 @@ int findGCD(int x, int y)
     }
 }
 
-//function definition
+// function definition
 void swap(int x, int y)
 {
     int temp;
     temp = x;
     x = y;
     y = temp;
-    cout<<x<<endl;
-    cout<<y<<endl;
+    cout << x << endl;
+    cout << y << endl;
     return;
 }
 
-//function definition
+// function definition
 int reverse(int x)
 {
     int rem, revnum = 0;
-    while(x > 0)
+    while (x > 0)
     {
-        rem = x % 10;   //getting last digit of number
-        revnum = (revnum * 10) + rem;   //adding this digit to reversed number
-        x = x / 10;   //removing last digit from original number
+        rem = x % 10;                 // getting last digit of number
+        revnum = (revnum * 10) + rem; // adding this digit to reversed number
+        x = x / 10;                   // removing last digit from original number
     }
-    return(revnum);
+    return (revnum);
 }
 
-//function definition
+// function definition
 int add(int x, int y)
 {
     int sum = (x + y);
