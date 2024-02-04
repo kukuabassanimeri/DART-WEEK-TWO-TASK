@@ -113,7 +113,7 @@ int main()
     cout<<b<<endl;
 }*/
 
-{
+/*{
     int FirstNumber, SecondNumber, GCD;
     cout << "Please enter the first number: ";
     cin >> FirstNumber;
@@ -123,6 +123,18 @@ int main()
     GCD = findGCD(FirstNumber, SecondNumber);
     cout<<GCD;
     
+}*/
+
+//program to calculate power of numbers
+{
+    double x, y, z;
+    cout<<"Enter the value of x: ";
+    cin>>x;
+    cout<<"Enter the value of y: ";
+    cin>>y;
+    z =pow(x, y);
+    cout<<z;
+
 }
 
 

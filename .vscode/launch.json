@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/HP1/OneDrive/Desktop/Vssample",
-      "program": "c:/Users/HP1/OneDrive/Desktop/Vssample/build/Debug/outDebug",
+      "cwd": "c:/Users/HP1/OneDrive/Desktop/C++ Codes",
+      "program": "c:/Users/HP1/OneDrive/Desktop/C++ Codes/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
