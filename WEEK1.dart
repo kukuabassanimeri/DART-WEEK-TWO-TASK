@@ -37,5 +37,9 @@ void main ()
   print("My occupation as student is $isStudent");
   */
   
+  //DART MAPPS
+  //CREATING MAPS WITH STRING KEYS AND INT VALUES
+  Map<String, int> ages = {"Alice": 30, "Bob": 25, "Charles": 35,};
+  print("$ages");
 }
 
