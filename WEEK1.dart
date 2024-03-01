@@ -39,7 +39,24 @@ void main ()
   
   //DART MAPPS
   //CREATING MAPS WITH STRING KEYS AND INT VALUES
+  /*
   Map<String, int> ages = {"Alice": 30, "Bob": 25, "Charles": 35,};
   print("$ages");
+*/
+
+/*
+  String runesString = "Runes in Dart: \u{1F600} \u{1F84B} \u{1F680}";
+   print(runesString);
+*/
+
+
+//ARITHMETIC OPERATIONS USING NUMBERS
+int num1 = 1000;
+int num2 = 2000;
+
+int sum = num1 + num2;
+int mul = num1 * num2;
+print("$sum");
+print("$mul");
 }
 
