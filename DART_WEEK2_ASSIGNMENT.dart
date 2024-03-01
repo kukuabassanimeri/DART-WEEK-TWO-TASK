@@ -42,11 +42,11 @@ void main()
 {
   //TASK 1
   //A program that compute addition of two numbers using function
-  /*int num1 = 100;
+  int num1 = 100;
   int num2 = 200;
 
   int answer = addTwo(num1, num2); //function call
-  print("$answer");*/
+  print("$answer");
 
 //TASK 2
 //A program that compute subtraction of two numbers using function
