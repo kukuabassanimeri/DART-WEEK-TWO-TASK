@@ -9,7 +9,7 @@ void main()
 {
   //var age = 30;
   //var age;
-  /*print("Enter the age value: ");
+  print("Enter the age value: ");
   var age = int.parse(stdin.readLineSync()!);
   if  (age > 18)
   {
@@ -18,7 +18,7 @@ void main()
   else
   {
     print("Abass is not eligible to vote to vote");
-  }*/
+  }
 
  print("Enter any number: ");
  int number = int.parse(stdin.readLineSync()!);
