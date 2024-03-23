@@ -79,6 +79,25 @@ else
   print("Your number is equal to 10");
 }
 
+/*print("Enter your name: ");
+var name = String.parse(stdin.readLineSync(!));
+print("Hello $name!");*/
+
+
+
+
+  stdout.write("Enter your name: ");
+  String ? Name = stdin.readLineSync();
+  print("Enter your age: ");
+  var Age = int.parse(stdin.readLineSync()!);
+  stdout.write("Enter your hobby: ");
+  String ? Hobby = stdin.readLineSync();
+  stdout.write("Enter your school: ");
+  String ? School = stdin.readLineSync();
+  print("I am $Name!, I have $Age years old, my hobby is $Hobby. Currently I am Student at $School.");
+
+  //print("Hello $Name!");
+
 
 }
 
